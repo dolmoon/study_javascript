@@ -37,9 +37,9 @@
 #### 0.1.5. 목록 (List)
 목록을 표기하기 위해서는 목록을 구성하는 각 항목의 앞에 `* ` 또는 `- `를 입력한다. 이 때, `*` 또는 `-`과 뒤에 오는 항목 명칭 사이에 공백이 있어야 목록으로 표시되는 점에 유의한다.
 
-* bullet item1 <-- `*bullet item1`
-* bullet item2 <-- `*bullet item2`
-* bullet item3 <-- `*bullet item3`
+* bullet item1 <-- `* bullet item1`
+* bullet item2 <-- `* bullet item2`
+* bullet item3 <-- `* bullet item3`
     * sub-bullet item1 <-- `(네 칸 공백 이후에)* sub-bullet item1`
 
 - another bullet item1 <-- `- another bullet item1`
@@ -106,16 +106,18 @@
   console.log('message3');
   ```
  
-다음과 같이 멀티라인 코드 시작 줄에 프로그램 언어 명칭을 같이 적어주면, 해당 언어의 문법을 강조해 표시해준다. 지원되는 
+다음과 같이 멀티라인 코드 시작 줄에 프로그램 언어 명칭을 같이 적어주면, 해당 언어의 문법을 강조해 표시해준다. 각 줄의 맨 앞에 네 개의 공백을 넣어 주면 들여쓰기(indent)하여 표시한다.
 
     ```javascript
     if (isAwesome){
-        return true
+        return true; --> 들여쓰기 표시를 위해 줄의 맨 앞에 네 개의 공백을 넣음.
     }
     ```
 ```javascript
 if (isAwesome){
-   return true
+aaa=bbb;
+ccc=ddd;
+    return true;
 }
 ```   
 
