@@ -19,11 +19,42 @@
 
 ---
 #### 0.1.2. 구분선(Line)
-내용을 구분하기 위해 가로선을 넣고 싶을 경우에는 줄의 맨 앞에 `---` 또는 `===`를 쓴다.
-|문법|결과|비고|
-|:--:|:--|:--|
-|`===`|<hr>||
-|`---`|<hr>||
+내용을 구분하기 위해 가로선을 넣고 싶을 경우에는 줄의 맨 앞에 `-`, `*` 또는 `=`(GitHub's Markdown)를 연속해서 쓴다. (한 라인에 공백을 제외한 다른 문자가 포함되지 않은 상태에서 3개 이상이면 됨)
+##### 표기법 1
+```
+가나다라
+===  --> GitHub에서는 1레벨 Header(`#`)와 동일한 효과로 나타남
+```
+###### 결과 1
+가나다라
+====
+
+##### 표기법 2
+```
+가나다라
+--- --> GitHub에서는 2레벨 Header(`##`)와 동일한 효과로 나타남
+```
+###### 결과 2
+가나다라
+---
+
+##### 표기법 3
+```
+가나다라
+*** --> GitHub에서는 라인으로 표시되지 않음
+```
+###### 결과 3
+가나다라
+***
+
+##### 표기법 4
+```
+가나다라
+- - -
+```
+###### 결과 4
+가나다라
+- - -
 
 ---
 #### 0.1.3. 글자체 (Text attributes)
@@ -64,12 +95,11 @@
 1. first item
    > nested blockquote in list item
 2. second item
-   ```
-   code block needs to be indented *twice* -- 8 spaces or two tabs
-   ```
+    ```
+    In the original Markdown a code block in a list needs to be indented twice(8 spaces or two tabs), but in GitHub's Markdown needs once.
+    ```
 3. third item
 
-목록에 코드를 추가하고 싶은 경우에는 탭을 2번 쓰거나 8개의 공백으로 들여쓰기 
 
 ---
 #### 0.1.6. 링크(Link)
