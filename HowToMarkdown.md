@@ -5,14 +5,14 @@
 간단한 문법만으로 깔끔한 문서를 작성할 수 있다.
 
 
-#### 0.1.1. 제목(Heading)
+#### 0.1.1. 제목(Header)
 제목 줄에는 `#`을 사용한다. 줄의 맨 앞에 `#`을 먼저 쓰고 뒤에 제목을 입력하면, HTML의 `<h1>`에 해당하는 제목으로 화면에 표시된다. `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`에 해당하는 제목에는 각각 `##`, `###`, `####`, `#####`, `######`을 사용한다.
 
 |문법|결과|비고|
 |:--:|:--|:--|
-|`# Heading1`|<h1>Heading1</h1>|GitHub에서 글자의 아래에 자동으로 구분선이 추가됨.|
-|`## Heading2`|<h2>Heading2</h2>|GitHub에서 글자의 아래에 자동으로 구분선이 추가됨.|
-|`### Heading3`|<h3>Heading3</h3>||
+|`# Header1`|<h1>Header1</h1>|GitHub에서 글자의 아래에 자동으로 구분선이 추가됨.|
+|`## Heading2`|<h2>Header2</h2>|GitHub에서 글자의 아래에 자동으로 구분선이 추가됨.|
+|`### Heading3`|<h3>Header3</h3>||
 |`#### Heading`|<h4>Heading4</h4>||
 |`##### Heading5`|<h5>Heading5</h5>||
 |`###### Heading6`|<h6>Heading6</h6>|GitHub에서 글자의 색상이 다른 Heading에 비해 연하게 표시됨|
@@ -30,18 +30,34 @@
 글자체는 **볼드체**와 *이탤릭체*, ~~취소선~~을 지원한다. 각각 `**볼드체**`, `*이탤릭체*`, `~~취소선~~`과 같이 사용하면 된다.
 
 ---
-#### 0.1.4. 인용문 (Quote)
-인용문을 표기하기 위해서는 줄의 맨 앞에 `>`을 먼저 쓰고 뒤에 인용문의 내용을 입력한다.
-    > 우리는 빛이 없는 어둠 속에서도...
+#### 0.1.4. 인용문 (BlockQuotes)
+인용문을 표기하기 위해서는 줄의 맨 앞에 `>`을 먼저 쓰고 뒤에 인용문의 내용을 입력한다. 인용문 내에서 다시 인용문을 표시하고자 할 때는 `>>`와 같이 중복해서 사용한다.
+> 우리는 빛이 없는 어둠 속에서도...
+>> 내재된 인용문은 `>`를 연속해서 사용한다.
+>> 
+> 기나긴 세월을 기다리어... 
+
+인용문은 Header나 리스트, 코드 블럭과 같은 다른 요소를 포함할 수 있다. 
+> ##### 인용문 안의 Header
+> |컬럼1|컬럼2|컬럼3|
+> |:--:|:--|:--|
+> |Cell11|Cell12|Cell13|
+> |Cell21|Cell22|Cell23|
+>
 
 ---
 #### 0.1.5. 목록 (List)
-목록을 표기하기 위해서는 목록을 구성하는 각 항목의 앞에 `* ` 또는 `- `를 입력한다. 이 때, `*` 또는 `-`과 뒤에 오는 항목 명칭 사이에 공백이 있어야 목록으로 표시되는 점에 유의한다.
+목록을 표기하기 위해서는 목록을 구성하는 각 항목의 앞에 `* `, `+` 또는 `- `를 입력한다. 이 때, `*`, `+` 또는 `-`과 뒤에 오는 항목 명칭 사이에 공백이 있어야 목록으로 표시되는 점에 유의한다.
 
 * bullet item1 <-- `* bullet item1`
 * bullet item2 <-- `* bullet item2`
 * bullet item3 <-- `* bullet item3`
     * sub-bullet item1 <-- `(네 칸 공백 이후에)* sub-bullet item1`
+
++ bullet item1 <-- `+ bullet item1`
++ bullet item2 <-- `+ bullet item2`
++ bullet item3 <-- `+ bullet item3`
+    + sub-bullet item1 <-- `(네 칸 공백 이후에)+ sub-bullet item1`
 
 - another bullet item1 <-- `- another bullet item1`
 - another bullet item2 <-- `- another bullet item2`
@@ -117,8 +133,6 @@
     ```
 ```javascript
 if (isAwesome){
-aaa=bbb;
-ccc=ddd;
     return true;
 }
 ```   
