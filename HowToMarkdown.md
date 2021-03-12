@@ -64,9 +64,9 @@
 1. first item
    > nested blockquote in list item
 2. second item
-        ```
-        code block needs to be indented *twice* -- 8 spaces or two tabs
-        ```
+   ```
+   code block needs to be indented *twice* -- 8 spaces or two tabs
+   ```
 3. third item
 
 목록에 코드를 추가하고 싶은 경우에는 탭을 2번 쓰거나 8개의 공백으로 들여쓰기 
