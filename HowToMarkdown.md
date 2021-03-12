@@ -49,25 +49,27 @@
 #### 0.1.5. 목록 (List)
 목록을 표기하기 위해서는 목록을 구성하는 각 항목의 앞에 `* `, `+` 또는 `- `를 입력한다. 이 때, `*`, `+` 또는 `-`과 뒤에 오는 항목 명칭 사이에 공백이 있어야 목록으로 표시되는 점에 유의한다.
 
-* bullet item1 <-- `* bullet item1`
-* bullet item2 <-- `* bullet item2`
-* bullet item3 <-- `* bullet item3`
-    * sub-bullet item1 <-- `(네 칸 공백 이후에)* sub-bullet item1`
+\* bullet item1
+\* bullet item2
+\* bullet item3
+    \* sub bullet item1 --> (네 칸 공백 이후에)* sub-bullet item1
 
-+ bullet item1 <-- `+ bullet item1`
-+ bullet item2 <-- `+ bullet item2`
-+ bullet item3 <-- `+ bullet item3`
-    + sub-bullet item1 <-- `(네 칸 공백 이후에)+ sub-bullet item1`
+* bullet item1
+   > nested blockquote in list item
+* bullet item2
+```
+code block needs to be indented *twice* -- 8 spaces or two tabs
+```
+* bullet item3
+    * sub-bullet item1
 
-- another bullet item1 <-- `- another bullet item1`
-- another bullet item2 <-- `- another bullet item2`
-- another bullet item3 <-- `- another bullet item3`
-    - sub another bullet item1 --> `(네 칸 공백 이후에)- sub-bullet item1`
+숫자형 목록을 표기하기 위해서는 각 항목 번호는 '1. ', '2. ', '3. '과 같이 숫자와 점을 쓰고 공백을 하나 추가한 후에 항목의 내용을 입력한다. 첫 번째 항목의 번호가 '3. '으로 시작하면 나머지 번호는 '4. ', '5. '과 같이 자동으로 수정됩니다. 예를 들어, '3. first item', '7. second item', '6. third item'으로 되어 있더라도 Markdown이 해독할 때 번호를 순서대로 재 조정하여 자동으로 '3. ', '4. ', '5. '로 바꿉니다.
 
-숫자형 목록을 표기하기 위해서는 각 항목 번호는 '1. ', '2. ', '3. '과 같이 숫자와 점을 쓰고 공백을 하나 추가한 후에 항목의 내용을 입력한다.
-  1. first item
-  2. second item
-  3. third item
+1. first item
+2. second item
+3. third item
+
+목록에 코드를 추가하고 싶은 경우에는 탭을 2번 쓰거나 8개의 공백으로 들여쓰기 
 
 ---
 #### 0.1.6. 링크(Link)
@@ -117,7 +119,6 @@
   console.log('message3');
   ```
   ````
-  
   ```javascript
   console.log('message1');
   console.log('message2');
@@ -135,5 +136,4 @@
 if (isAwesome){
     return true;
 }
-```   
-
+```
