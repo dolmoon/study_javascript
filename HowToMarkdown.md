@@ -2,7 +2,7 @@
 ## 0. 자바스크립트 입문하기
 ### 0.1. 마크다운(Markdown) 문법 익히기
 마크다운 언어는 '.md' 파일로 깃허브(GitHub) 등에서 프로젝트나 소스코드를 설명하는 문서로 많이 사용된다.
-간단한 문법만으로 깔끔하게 문서를 작성할 수 있다.
+간단한 문법만으로 깔끔한 문서를 작성할 수 있다.
 
 
 #### 0.1.1. 제목(Heading)
@@ -19,9 +19,10 @@
 
 ---
 #### 0.1.2. 구분선(Line)
-내용을 구분하기 위해 가로선을 넣고 싶을 경우에는 줄의 맨 앞에 `---`를 쓴다.
+내용을 구분하기 위해 가로선을 넣고 싶을 경우에는 줄의 맨 앞에 `---` 또는 `===`를 쓴다.
 |문법|결과|비고|
 |:--:|:--|:--|
+|`===`|<hr>||
 |`---`|<hr>||
 
 ---
@@ -68,6 +69,7 @@
 |문법|결과|
 |--|--|
 |`![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)`|![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)|
+|Markdown에서 이미지의 크기는 조정이 안되므로 HTML의 'image' 태그를 이용하는 것도 방법이다.|<img src = 'https://octodex.github.com/images/yaktocat.png' title = 'Image of Yaktocat' width = '200'></img>| 
 
 ---
 #### 0.1.8. 테이블(Table)
