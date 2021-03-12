@@ -63,14 +63,14 @@
     `console.log('your message')` 
     --> \`console.log('your message')\`
     
-  * 멀티라인 코드는 다음과 같이 시작 줄과 끝 줄에서 백틱을 세 번 연속("```)으로 사용하면 된다.
+  * 멀티라인 코드는 다음과 같이 시작 줄과 끝 줄에서 백틱을 세 번 연속(```)으로 사용하면 된다.
 
+    ````
     ```
-    "```
     console.log('message1');
     console.log('message2');
     console.log('message3');
-    "```
     ```
+    ````
 
 
