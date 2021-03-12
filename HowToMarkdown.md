@@ -65,9 +65,9 @@
 #### 0.1.7. 이미지(Image)
 이미지를 추가하려면 `![이미지 설명](URL)`과 같이 입력한다.
 
-|문법|결과|비고|
-|--|--|--|
-|`![image description](https://user-images.githubusercontent.com/61736137/102153953-b2881000-3ebb-11eb-9581-7026bc8e169e.jpg)`|![image description](https://user-images.githubusercontent.com/61736137/102153953-b2881000-3ebb-11eb-9581-7026bc8e169e.jpg)||
+|문법|결과|
+|--|--|
+|`![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)`|![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)|
 
 ---
 #### 0.1.8. 테이블(Table)
@@ -99,6 +99,12 @@
   console.log('message3');
   ```
   ````
+  
+  ```javascript
+  console.log('message1');
+  console.log('message2');
+  console.log('message3');
+  ```
  
 다음과 같이 멀티라인 코드 시작 줄에 프로그램 언어 명칭을 같이 적어주면, 해당 언어의 문법을 강조해 표시해준다. 지원되는 
 
@@ -108,8 +114,8 @@
     }
     ```
 ```javascript
-   if (isAwesome){
-       return true
-   }
+if (isAwesome){
+   return true
+}
 ```   
 
