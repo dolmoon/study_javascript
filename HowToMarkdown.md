@@ -49,9 +49,9 @@
 #### 0.1.5. 목록 (List)
 목록을 표기하기 위해서는 목록을 구성하는 각 항목의 앞에 `* `, `+` 또는 `- `를 입력한다. 이 때, `*`, `+` 또는 `-`과 뒤에 오는 항목 명칭 사이에 공백이 있어야 목록으로 표시되는 점에 유의한다.
 
-\* bullet item1
-\* bullet item2
-\* bullet item3
+\* bullet item1<br>
+\* bullet item2<br>
+\* bullet item3<br>
     \* sub bullet item1 --> (네 칸 공백 이후에)* sub-bullet item1
 
 * bullet item1
@@ -64,9 +64,9 @@
 1. first item
    > nested blockquote in list item
 2. second item
-    ```
-    code block needs to be indented *twice* -- 8 spaces or two tabs
-    ```
+        ```
+        code block needs to be indented *twice* -- 8 spaces or two tabs
+        ```
 3. third item
 
 목록에 코드를 추가하고 싶은 경우에는 탭을 2번 쓰거나 8개의 공백으로 들여쓰기 
