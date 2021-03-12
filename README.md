@@ -39,7 +39,7 @@
   3. third item
 
 #### 0.1.6. 링크(Link)
-하이퍼링크를 추가하려면 `[링크 섦명](URL)`과 같이 입력한다.
+하이퍼링크를 추가하려면 `[링크 설명](URL)`과 같이 입력한다.
 
   Click [here](http://academy.dream-coding.com/) --> `Click [here](http://academy.dream-coding.com/)`
 
@@ -60,10 +60,9 @@
 코드를 따로 표시하고자 할 경우에는 인라인 코드를 표시하는 방법과 여러 줄을 코드로 표시하는 두 가지 방법이 있다.
   * 인라인 코드는 백틱(\`)으로 코드를 감싸면 된다.
 
-    `console.log('your message')` 
-    --> \`console.log('your message')\`
+    `` `console.log('your message')` ``
     
-  * 멀티라인 코드는 다음과 같이 시작 줄과 끝 줄에서 백틱을 세 번 연속(```)으로 사용하면 된다.
+  * 멀티라인 코드는 다음과 같이 시작 줄과 끝 줄에서 백틱을 세 번 연속으로 사용하면 된다.
 
     ````
     ```
