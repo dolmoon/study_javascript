@@ -8,7 +8,7 @@
 #### 0.1.1. 제목(Header)
 제목 줄에는 `#`을 사용한다. 줄의 맨 앞에 `#`을 먼저 쓰고 뒤에 제목을 입력하면, HTML의 `<h1>`에 해당하는 제목으로 화면에 표시된다. `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`에 해당하는 제목에는 각각 `##`, `###`, `####`, `#####`, `######`을 사용한다.
 
-|문법|결과|비고|
+|표기법|결과|비고|
 |:--:|:--|:--|
 |`# Header1`|<h1>Header1</h1>|GitHub에서 글자의 아래에 자동으로 구분선이 추가됨.|
 |`## Heading2`|<h2>Header2</h2>|GitHub에서 글자의 아래에 자동으로 구분선이 추가됨.|
@@ -80,11 +80,15 @@
 #### 0.1.5. 목록 (List)
 목록을 표기하기 위해서는 목록을 구성하는 각 항목의 앞에 `* `, `+` 또는 `- `를 입력한다. 이 때, `*`, `+` 또는 `-`과 뒤에 오는 항목 명칭 사이에 공백이 있어야 목록으로 표시되는 점에 유의한다.
 
-\* bullet item1<br>
-\* bullet item2<br>
-\* bullet item3<br>
-    \* sub bullet item1 --> (네 칸 공백 이후에)* sub-bullet item1
-
+##### 표기법
+   ```
+* bullet item1<br>
+* bullet item2<br>
+* bullet item3<br>
+    * sub bullet item1 --> (네 칸 공백 이후에)* sub-bullet item1
+   ```
+   
+##### 결과
 * bullet item1
 * bullet item2
 * bullet item3
@@ -92,11 +96,24 @@
 
 숫자형 목록을 표기하기 위해서는 각 항목 번호는 '1. ', '2. ', '3. '과 같이 숫자와 점을 쓰고 공백을 하나 추가한 후에 항목의 내용을 입력한다. 첫 번째 항목의 번호가 '3. '으로 시작하면 나머지 번호는 '4. ', '5. '과 같이 자동으로 수정된다. 예를 들어, '3. first item', '7. second item', '6. third item'으로 되어 있더라도 Markdown이 해독할 때 번호를 순서대로 재 조정하여 자동으로 '3. ', '4. ', '5. '로 바꾼다.
 
+##### 표기법
+```
 1. first item
    > nested blockquote in list item
 2. second item
     ```
     In the original Markdown a code block in a list needs to be indented twice(8 spaces or two tabs), but in GitHub's Markdown needs once.
+    ```
+3. third item
+```
+
+##### 결과
+1. first item
+   > nested blockquote in list item
+2. second item
+    In the original Markdown a code block in a list needs to be indented twice(8 spaces or two tabs), but GitHub needs once.
+    ```
+    console.log("message");
     ```
 3. third item
 
@@ -123,11 +140,15 @@
 #### 0.1.8. 테이블(Table)
 테이블을 추가하려면 다음의 예와 같이 헤더와 구분줄, 셀 내용을 입력한다.
 
-    |Header Column1|Header Column2|Header Column3|
-    |:--|--:|:--:|  --> 컬럼에 대해 정렬 방식을 지정할 수 있다. (각 컬럼별로 '좌측 정렬', '우측 정렬', '가운데 정렬' 지정)
-    |Cell11|Cell12|Cell13|
-    |Cell21|Cell22|Cell23|
+##### 표기법
+```
+|Header Column1|Header Column2|Header Column3|
+|:--|--:|:--:|  --> 컬럼에 대해 정렬 방식을 지정할 수 있다. (각 컬럼별로 '좌측 정렬', '우측 정렬', '가운데 정렬' 지정)
+|Cell11|Cell12|Cell13|
+|Cell21|Cell22|Cell23|
+```
 
+##### 결과
 |Header Column1|Header Column2|Header Column3|
 |:--|--:|:--:|
 |Cell11|Cell12|Cell13|
@@ -138,7 +159,7 @@
 코드를 따로 표시하고자 할 경우에는 인라인 코드를 표시하는 방법과 여러 줄을 코드로 표시하는 두 가지 방법이 있다.
   * 인라인 코드는 백틱(\`)으로 코드를 감싸면 된다.
 
-    이 줄에는 인라인 코드로 표시되는 코드인, `` `console.log('your message')` ``이 포함되어 있습니다.
+      * 이 줄에는 인라인 코드로 표시되는 코드인, `` `console.log('your message')` ``이 포함되어 있습니다.
     
   * 멀티라인 코드는 다음과 같이 시작 줄과 끝 줄에서 백틱을 세 번 연속으로 사용하면 된다.
 
@@ -149,19 +170,19 @@
   console.log('message3');
   ```
   ````
-  ```javascript
-  console.log('message1');
-  console.log('message2');
-  console.log('message3');
-  ```
  
 다음과 같이 멀티라인 코드 시작 줄에 프로그램 언어 명칭을 같이 적어주면, 해당 언어의 문법을 강조해 표시해준다. 각 줄의 맨 앞에 네 개의 공백을 넣어 주면 들여쓰기(indent)하여 표시한다.
 
-    ```javascript
-    if (isAwesome){
-        return true; --> 들여쓰기 표시를 위해 줄의 맨 앞에 네 개의 공백을 넣음.
-    }
-    ```
+##### 표기법
+````
+```javascript
+if (isAwesome){
+return true; --> 들여쓰기 표시를 위해 줄의 맨 앞에 네 개의 공백을 넣음.
+}
+```
+````
+
+##### 결과
 ```javascript
 if (isAwesome){
     return true;
