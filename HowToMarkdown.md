@@ -101,9 +101,11 @@
 1. first item
    > nested blockquote in list item
 2. second item
-    ```
-    In the original Markdown a code block in a list needs to be indented twice(8 spaces or two tabs), but in GitHub's Markdown needs once.
-    ```
+      
+      In the original Markdown a code block in a list needs to be indented twice(8 spaces or two tabs).
+      ```
+      console.log("message");
+      ```
 3. third item
 ```
 
